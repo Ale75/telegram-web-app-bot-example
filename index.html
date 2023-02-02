@@ -27,7 +27,9 @@
     <p id="p"></p>
     
     <script>
-        document.getElementById("p").innerHTML = '<object type="type/html" data=""https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim""  ></object>';
+        $(document).ready( function() {
+            $("#p").load("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
+        });
     </script>
 </body>
     
