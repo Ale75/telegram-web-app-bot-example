@@ -24,13 +24,12 @@
 </head>
 
 <body>
-    <div id="p">
+    <div id="content">
     </div>
     
     <script>
-        $(document).ready( function() {
-            $("#p").load("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
-        });
+        const contentDiv = document.getElementById("content");
+        contentDiv.innerHTML = await fetchHtmlAsText("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
     </script>
 </body>
     
