@@ -24,7 +24,7 @@
         const req = new XMLHttpRequest();
         req.open("GET", "https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
         req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        req.setRequestHeader('Access-Control-Allow-Origin', '*');
+        req.setRequestHeader('Access-Control-Allow-Origin', 'https://sport.ticketone.it/');
         req.send();
         req.onload = function() {
             document.body.innerHTML = req.responseText;
