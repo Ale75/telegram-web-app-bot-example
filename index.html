@@ -20,11 +20,16 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
     </script>
+    <script>
+        const req = new XMLHttpRequest();
+        req.open("GET", "https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
+        req.send();
+    </script>
 
 </head>
 
 <body>
-    <embed src="https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim" width=200 height=200 />
+    
 </body>
     
 </html>
