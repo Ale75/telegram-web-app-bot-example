@@ -22,7 +22,8 @@
     </script>
     <script>
         function bookTicket() {
-            //https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim
+            window.location.assign("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
+            
             document.getElementById('cmpbntnotxt').click();
             
             var btn = document.getElementsByClassName('tickets-container')[0].getElementsByTagName('button');
@@ -50,8 +51,7 @@
 </head>
 
 <body>
-    <script> window.Telegram.WebApp.MainButton.setText('Buy!').show().onClick(function(){ window.location.assign("https://google.com"); })</script>
-    <iframe id= "webpage" src="https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim"></iframe>
+    <script> window.Telegram.WebApp.MainButton.setText('Buy!').show().onClick(bookTicket())</script>
 </body>
     
 </html>
