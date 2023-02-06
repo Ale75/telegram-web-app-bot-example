@@ -21,9 +21,9 @@
         setThemeClass();
     </script>
     <script>
+        var link;
         function bookTicket() {
-            var link = window.Telegram.WebApp.openLink("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
-            console.log(link);
+            link = window.Telegram.WebApp.openLink("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
         }
     </script>
 
@@ -31,6 +31,7 @@
 
 <body>
     <input id="clickMe" type="button" value="clickme" onclick="bookTicket();" />
+    console.log(link);
 </body>
     
 </html>
