@@ -23,12 +23,28 @@
     <script>
         function bookTicket() {
             window.Telegram.WebApp.openLink("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
+            
             document.getElementById('cmpbntnotxt').click();
-            var btn = document.getElementsByClassName('tickets-container')[0].getElementsByTagName('button') 
+            
+            var btn = document.getElementsByClassName('tickets-container')[0].getElementsByTagName('button');
             for(var cb of btn)
                 if(cb.innerText=='CURVA B ANELLO INFERIORE')
                     break;
             cb.click();
+            
+            var add;
+            var basket;
+            var sl = document.getElementsByClassName('seats-list')[0].getElementsByTagName('button');
+            for(var bt of sl){
+                if(bt.innerText.includes('add')){
+                    add=bt;
+                }
+                if(bt.innerText.includes('carrello')){
+                    basket=bt;
+                }
+            }
+            add.click()
+            basket.click()
         }
     </script>
 
