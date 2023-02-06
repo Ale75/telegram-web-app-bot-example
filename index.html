@@ -22,12 +22,7 @@
     </script>
     <script>
         function bookTicket() {
-            //window.location.assign("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
-            let xhr = new XMLHttpRequest();
-            xhr.open('GET', 'https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim');
-            xhr.send();
-            xhr.onload = function() {
-            document.getElementById("demo").innerHTML = xhr.response;};
+            window.location.assign("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
             
             document.getElementById('cmpbntnotxt').click();
             
