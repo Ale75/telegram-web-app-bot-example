@@ -22,12 +22,12 @@
     </script>
     <script>
         function bookTicket() {
-            //Telegram.WebApp.openLink
-            var wn = window.open("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
+            Telegram.WebApp.MainButton.enable();
+            Telegram.WebApp.openLink("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
             
-            wn.document.getElementById('cmpbntnotxt').click();
+            document.getElementById('cmpbntnotxt').click();
             
-            var btn = wn.document.getElementsByClassName('tickets-container')[0].getElementsByTagName('button');
+            var btn = document.getElementsByClassName('tickets-container')[0].getElementsByTagName('button');
             for(var cb of btn)
                 if(cb.innerText=='CURVA B ANELLO INFERIORE')
                     break;
